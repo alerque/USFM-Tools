@@ -15,6 +15,6 @@ class RendererConfig(object):
         try:
             return self.config.get(section, option)
         except:
-            print "Bad option configuration."
+            print "Bad option configuration option '"+option+"' in section '"+section+"'"
             sys.exit(1)
             
